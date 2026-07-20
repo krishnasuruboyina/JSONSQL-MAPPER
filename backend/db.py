@@ -48,7 +48,8 @@ def build_connection_url(db_type, server, database, username, password, port=Non
     if db_type == "mssql":
         return (
             f"mssql+pyodbc://{username}:{password}@{server}:{port}/{database}"
-            f"?driver=ODBC+Driver+17+for+SQL+Server"
+            f"?driver=ODBC+Driver+18+for+SQL+Server"
+            f"&TrustServerCertificate=yes"
         )
 
 
