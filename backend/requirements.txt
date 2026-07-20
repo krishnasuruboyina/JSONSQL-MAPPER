@@ -1,0 +1,17 @@
+Flask==3.0.3
+flask-cors==4.0.1
+SQLAlchemy==2.0.31
+gunicorn==22.0.0
+ 
+# PostgreSQL
+psycopg2-binary>=2.9.9
+ 
+# MySQL
+PyMySQL==1.1.1
+ 
+# Oracle (thin mode — no Oracle Instant Client needed)
+oracledb==2.4.1
+ 
+# SQL Server (needs the msodbcsql17 system driver — see Dockerfile)
+pyodbc==5.1.0
+ 
